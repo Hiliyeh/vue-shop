@@ -47,6 +47,9 @@ export const eventBus = new Vue({
         title: 'Asus ROG G703',
         description: 'Graphics are handled by an overclockable Nvidia GeForce GTX 1080 graphics card with 8GB GDDR5X that, according to the company.',
         price: 1800
+      }, 
+      {
+        page:'User'
       }
     ],
     cart: [
@@ -64,7 +67,12 @@ export const eventBus = new Vue({
       this.cart = this.cart.slice().filter( i => i.id !== item.id );
       this.$emit('update:cart', this.cart.slice());
     }
-  }
+  },
+changePage(page) {
+	this.page = page;
+	this.$emit('update:page', this.page);
+},
+
 })
 
 new Vue({
