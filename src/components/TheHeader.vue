@@ -6,7 +6,7 @@
         width="30"
         height="30"
       >
-      Dyma
+      Vue-shop
     </a>
     <button class="navbar-toggler">
       <span class="navbar-toggler-icon" />
